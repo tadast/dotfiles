@@ -28,7 +28,7 @@ alias gst="git status"
 # ==========
 # random
 # ==========
-alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
+alias fact="elinks -dump randomfunfacts.com | sed -n '/^[┌│└]/p'"
 alias notify="bg; wait %1; say 'Done!" # run long job -> Ctrl+z, $notify
 alias servedir="ruby -rwebrick -e's=WEBrick::HTTPServer.new(:Port => 5555, :DocumentRoot => Dir.pwd).start'"
 alias topcmd="history | awk '{print $2}' | awk 'BEGIN {FS=\"|\"} {print $1}' | sort | uniq -c | sort -r"
