@@ -15,4 +15,5 @@ sudo apt install -y \
   shellcheck \
   exuberant-ctags \
   redis \
-  tig
+  tig \
+  ncdu

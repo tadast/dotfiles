@@ -2,7 +2,6 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-wmctrl -r "Google Chrome" -t 2
+wmctrl -r "Firefox" -t 2
 wmctrl -r "Slack" -t 3
 wmctrl -r "Discord" -t 3
-wmctrl -r "Spotify" -t 4

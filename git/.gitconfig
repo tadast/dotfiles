@@ -1,7 +1,6 @@
 [user]
-  name = Andrew Vos
-  email = andrew.vos@gmail.com
-  signingkey = EAEE27C95790CBBE
+  name = Tadas Tamosauskas
+  email = tadastamo@gmail.com
 
 [color]
   ui = true
@@ -19,10 +18,10 @@
 [init]
   templatedir = ~/.git-template
 [web]
-  browser = chrome
+  browser = firefox
 
 [github]
-  user = AndrewVos
+  user = tadast
 
 [diff]
   algorithm = patience
@@ -34,5 +33,3 @@
 	helper = store
 [pull]
 	rebase = true
-[commit]
-	gpgsign = true

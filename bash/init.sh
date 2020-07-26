@@ -38,9 +38,8 @@ fi
 # Golang
 export PATH=$PATH:~/go/bin
 
-alias b='bundle exec'
-alias ber='bundle exec rspec spec --color'
-alias bec='bundle exec cucumber --color'
+alias be='bundle exec'
+alias bs='bundle exec rspec spec --color'
 alias irb=pry
 
 alias ls='exa -la'
