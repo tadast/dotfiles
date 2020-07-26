@@ -17,4 +17,5 @@ sudo apt install -y \
   redis \
   tig \
   ncdu \
-  net-tools
+  net-tools \
+  elinks
