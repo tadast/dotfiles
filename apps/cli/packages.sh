@@ -16,4 +16,5 @@ sudo apt install -y \
   exuberant-ctags \
   redis \
   tig \
-  ncdu
+  ncdu \
+  net-tools
