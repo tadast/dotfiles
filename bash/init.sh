@@ -5,8 +5,6 @@ export EDITOR=vim
 
 export PATH="$PATH:$HOME/.dotfiles/scripts"
 
-# Alias g to git
-alias g=git
 # Setup g to use git completions
 complete -o default -o nospace -F _git g
 # Source git completions
@@ -15,6 +13,7 @@ source /usr/share/bash-completion/completions/git
 source ~/.dotfiles/bash/init/ps1.sh
 source ~/.dotfiles/bash/init/yarn-completion.sh
 source ~/.dotfiles/bash/init/golang.sh
+source ~/.dotfiles/bash/init/aliases.sh
 
 # make CTRL-W kill words up until \
 bind '\C-w:backward-kill-word'
@@ -22,10 +21,6 @@ bind '\C-w:backward-kill-word'
 # Nodejs
 export PATH="$PATH:node_modules/.bin"
 export PATH="$PATH:$HOME/.yarn/bin"
-export HUSKY_SKIP_INSTALL=yes
-
-# Overcommit gem
-export OVERCOMMIT_DISABLE=1
 
 # Ruby
 if [[ -f /usr/local/share/chruby/chruby.sh ]]; then
@@ -38,8 +33,3 @@ fi
 # Golang
 export PATH=$PATH:~/go/bin
 
-alias be='bundle exec'
-alias bs='bundle exec rspec spec --color'
-alias irb=pry
-
-alias ls='exa -la'
