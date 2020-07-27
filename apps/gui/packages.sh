@@ -6,5 +6,4 @@ sudo apt install -y \
   krita \
   xclip \
   flameshot \
-  vlc \
-  wmctrl
+  vlc 

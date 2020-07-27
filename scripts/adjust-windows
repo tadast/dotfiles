@@ -1,7 +1,0 @@
-#!/bin/bash
-set -euo pipefail
-IFS=$'\n\t'
-
-wmctrl -r "Firefox" -t 2
-wmctrl -r "Slack" -t 3
-wmctrl -r "Discord" -t 3
