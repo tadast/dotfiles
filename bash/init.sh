@@ -26,3 +26,6 @@ export PATH="$PATH:$HOME/.yarn/bin"
 # Golang
 export PATH=$PATH:~/go/bin
 
+# Ansible
+
+export ANSIBLE_VAULT_PASSWORD_FILE="$HOME/.ansible/vault_password/pass"
