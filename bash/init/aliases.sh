@@ -5,7 +5,6 @@
 alias be="bundle exec"
 alias bs="bundle exec rspec"
 # Run changed specs
-alias cs="bundle exec rspec $(git status | grep spec | grep "modified:" | cut -b 14- | tr '\n' ' ')"
 alias cleanup="rm -rf **/*.orig & rm -rf tmp/* & echo '' > log/development.log & echo '' > log/test.log"
 alias migrate='rake db:migrate'
 alias mlm='subl `ls -r db/migrate/* | head -n 1`'
@@ -36,3 +35,4 @@ alias myipv4='dig @resolver1.opendns.com A myip.opendns.com +short -4'
 alias howtocurl='curl https://cheat.sh/curl'
 alias showports='netstat -tulpn'
 alias ls='exa -la'
+alias re='exec bash' # reload sh session
