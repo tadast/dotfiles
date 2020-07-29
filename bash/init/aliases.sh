@@ -13,7 +13,7 @@ alias mlm='subl `ls -r db/migrate/* | head -n 1`'
 # ==========
 # git
 # ==========
-alias g=git
+alias g="git"
 alias gitc="git add -A && git commit -a"
 alias gitrc='git commit -a --amend -C HEAD'
 alias glog="git log --pretty=format:'%C(yellow)%h%Creset %C(bold blue)%ad%Creset %s %C(bold green)<%an>%Creset' --abbrev-commit --date=short"
