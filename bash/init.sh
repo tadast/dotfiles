@@ -15,6 +15,7 @@ source ~/.dotfiles/bash/init/yarn-completion.sh
 source ~/.dotfiles/bash/init/golang.sh
 source ~/.dotfiles/bash/init/aliases.sh
 source ~/.dotfiles/bash/init/asdf.sh
+source ~/.dotfiles/bash/init/zet.sh
 
 # make CTRL-W kill words up until \
 bind '\C-w:backward-kill-word'

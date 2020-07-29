@@ -3,4 +3,6 @@ set -euo pipefail
 IFS=$'\n\t'
 
 sudo apt install -y \
-  ansible
+  ansible \
+  redis-server \
+  tilix
