@@ -23,6 +23,7 @@ alias grc='git rebase --continue'
 alias gitp='git -c "interactive.diffFilter=less" add -p' # https://github.com/so-fancy/diff-so-fancy/issues/296
 alias gitclear='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d' # deletes branches merged to master
 alias gst="git status"
+alias gco="git checkout"
 
 # ==========
 # random
