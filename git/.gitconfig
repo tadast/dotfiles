@@ -17,6 +17,7 @@
 
 [init]
   templatedir = ~/.git-template
+
 [web]
   browser = firefox
 
@@ -30,6 +31,17 @@
   default = simple
 
 [credential]
-	helper = store
+  helper = store
+
+[rebase]
+  autosquash = true
+  autostash = true
+
 [pull]
-	rebase = true
+  rebase = true
+
+[diff "ansible-vault"]
+  textconv = ansible-vault view
+[merge "ansible-vault"]
+  name = ansible-vault merge driver
+  driver = /usr/local/bin/ansible-vault-merge -- %O %A %B %P
