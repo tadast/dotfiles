@@ -5,4 +5,5 @@ IFS=$'\n\t'
 sudo apt install -y \
   ansible \
   redis-server \
-  tilix
+  tilix \
+  meld
