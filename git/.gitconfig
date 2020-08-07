@@ -8,6 +8,7 @@
   st = status
   br = branch
   cm = checkout master
+  co = checkout
   wip = commit -m 'wip [ci skip]'
 [core]
   excludesfile = ~/.gitignore
