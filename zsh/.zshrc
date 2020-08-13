@@ -37,6 +37,12 @@ if command -v "thefuck" &> /dev/null; then
   eval $(thefuck --alias)
 fi
 
+# zsh-autosuggestions
+
+if [[ -f "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
+  source "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
+fi
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
