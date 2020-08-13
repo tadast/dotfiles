@@ -43,6 +43,11 @@ if [[ -f "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
   source "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 fi
 
+# zsh-autopair
+if [[ -f "$HOME/.zsh/zsh-autopair/autopair.zsh" ]]; then
+  source "$HOME/.zsh/zsh-autopair/autopair.zsh"
+fi
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
