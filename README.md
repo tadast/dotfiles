@@ -1,20 +1,3 @@
-# Fork info
-
-This is a fork of [vosfiles](https://github.com/AndreVos/dotfiles)
-
-Added:
-
-- ncdu
-- vlc
-
-Removed:
-
-- vpn setup
-- hugo
-- chrome
-- mpv
-- spotify
-
 # dotfiles
 
 Some scripts to fully provision ubuntu machines with my dotfiles and applications.

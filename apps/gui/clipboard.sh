@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 GTT_EXTENSIONS_DIR=~/.local/share/gnome-shell/extensions
 
-if [[ ! -f $GTT_EXTENSIONS_DIR/clipboard-indicator@tudmotu.com ]]; then
+if [[ ! -d $GTT_EXTENSIONS_DIR/clipboard-indicator@tudmotu.com ]]; then
   sudo apt install -y gnome-tweak-tool
 
   mkdir -p ~/.local/share/gnome-shell/extensions
