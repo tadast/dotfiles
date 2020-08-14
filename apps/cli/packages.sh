@@ -18,4 +18,5 @@ sudo apt install -y \
   tig \
   ncdu \
   net-tools \
-  elinks
+  elinks \
+  thefuck

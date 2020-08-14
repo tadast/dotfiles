@@ -33,6 +33,10 @@ if [[ -f $HOME/z.sh ]]; then
   . $HOME/z.sh
 fi
 
+if command -v "thefuck" &> /dev/null; then
+  eval $(thefuck --alias)
+fi
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
