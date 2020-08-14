@@ -19,4 +19,5 @@ sudo apt install -y \
   ncdu \
   net-tools \
   elinks \
-  thefuck
+  thefuck \
+  tldr
