@@ -103,3 +103,4 @@ precmd() {
 PROMPT='%F{magenta}$(hostname):%F{blue}%1~%{$reset_color%}${vcs_info_msg_0_} • %{$reset_color%}'
 
 . $HOME/.dotfiles/bash/init/aliases.sh
+. $HOME/mfa_alias.sh
