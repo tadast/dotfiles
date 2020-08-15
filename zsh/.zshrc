@@ -48,6 +48,11 @@ if [[ -f "$HOME/.zsh/zsh-autopair/autopair.zsh" ]]; then
   source "$HOME/.zsh/zsh-autopair/autopair.zsh"
 fi
 
+# scmpuff
+if [[ -f "/usr/local/bin/scmpuff" ]]; then
+  eval "$(scmpuff init -s)"
+fi
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
