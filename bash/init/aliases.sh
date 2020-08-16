@@ -37,3 +37,6 @@ alias howtocurl='curl https://cheat.sh/curl'
 alias showports='netstat -tulpn'
 alias ls='exa -la'
 alias re='exec bash' # reload sh session
+alias open=xdg-open
+alias edit=subl
+alias zshrc='edit ~/.zshrc'
