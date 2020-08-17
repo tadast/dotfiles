@@ -116,11 +116,8 @@ gtk-theme='HighContrast'
 show-battery-percentage=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'apport-gtk', 'firefox', 'discord', 'enpass', 'org-gnome-nautilus', 'sublime-text', 'dropbox', 'flameshot', 'snap-store-ubuntu-software', 'albert', 'slack', 'vlc', 'org-gnome-extensions-desktop', 'org-gnome-shell-extensions', 'gnome-printers-panel', 'com-gexperts-tilix']
+application-children=['update-manager', 'apport-gtk', 'firefox', 'discord', 'enpass', 'org-gnome-nautilus', 'sublime-text', 'dropbox', 'flameshot', 'snap-store-ubuntu-software', 'slack', 'vlc', 'org-gnome-extensions-desktop', 'org-gnome-shell-extensions', 'gnome-printers-panel', 'com-gexperts-tilix']
 show-banners=true
-
-[org/gnome/desktop/notifications/application/albert]
-application-id='albert.desktop'
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'

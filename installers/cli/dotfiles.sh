@@ -6,5 +6,5 @@ sudo apt install -y \
   git \
   stow
 
-stow --verbose --dir "$HOME/.dotfiles" --target ~ ctags git ssh vim asdf zsh
+stow --verbose --dir "$HOME/.dotfiles/configs" --target ~ $(ls "$HOME/.dotfiles/configs")
 
