@@ -24,6 +24,7 @@ alias gitp='git -c "interactive.diffFilter=less" add -p' # https://github.com/so
 alias gitclear='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d' # deletes branches merged to master
 alias gst="scmpuff_status"
 alias gco="git checkout"
+alias gp="git push -u"
 
 # ==========
 # random

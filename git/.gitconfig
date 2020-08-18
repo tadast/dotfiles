@@ -29,7 +29,7 @@
   algorithm = patience
 
 [push]
-  default = simple
+	default = current
 
 [credential]
   helper = store
