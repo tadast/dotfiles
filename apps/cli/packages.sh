@@ -20,4 +20,5 @@ sudo apt install -y \
   net-tools \
   elinks \
   thefuck \
-  tldr
+  tldr \
+  ffmpeg
