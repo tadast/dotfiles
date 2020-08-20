@@ -23,6 +23,9 @@ export PATH="$GOPATH/bin:$PATH"
 export PATH="$PATH:node_modules/.bin"
 export PATH="$PATH:$HOME/.yarn/bin"
 
+# Ansible
+export ANSIBLE_VAULT_PASSWORD_FILE="$HOME/.secrets/ansible/vault_password/pass"
+
 # asdf
 if [[ -f $HOME/.asdf/asdf.sh ]]; then
   . $HOME/.asdf/asdf.sh
