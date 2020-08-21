@@ -26,6 +26,10 @@ export PATH="$PATH:$HOME/.yarn/bin"
 # Ansible
 export ANSIBLE_VAULT_PASSWORD_FILE="$HOME/.secrets/ansible/vault_password/pass"
 
+# source functions for tilix to detect cwd correctly
+# https://github.com/gnunn1/tilix/issues/34
+source /etc/profile.d/vte-2.91.sh
+
 # asdf
 if [[ -f $HOME/.asdf/asdf.sh ]]; then
   . $HOME/.asdf/asdf.sh
@@ -112,3 +116,4 @@ PROMPT='%F{magenta}$(hostname):%F{blue}%1~%{$reset_color%}${vcs_info_msg_0_} •
 
 . $HOME/.dotfiles/bash/init/aliases.sh
 . $HOME/mfa_alias.sh
+
