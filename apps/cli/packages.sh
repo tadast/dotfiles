@@ -21,4 +21,5 @@ sudo apt install -y \
   elinks \
   thefuck \
   tldr \
-  ffmpeg
+  ffmpeg \
+  pavucontrol # Audio configuration
