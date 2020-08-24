@@ -94,6 +94,14 @@ bindkey '^W' my-backward-delete-word
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
+# Cycle through history based on characters already typed on the line
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "$key[Up]" up-line-or-beginning-search
+bindkey "$key[Down]" down-line-or-beginning-search
+
 # Prompt
 autoload -U colors && colors
 autoload -Uz vcs_info
