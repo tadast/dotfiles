@@ -9,6 +9,12 @@ alias cleanup="rm -rf **/*.orig & rm -rf tmp/* & echo '' > log/development.log &
 alias migrate='rake db:migrate'
 alias mlm='subl `ls -r db/migrate/* | head -n 1`'
 
+#===========
+# Elixir
+#===========
+
+alias mt="mix test"
+
 # ==========
 # git
 # ==========
