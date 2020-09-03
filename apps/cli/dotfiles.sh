@@ -19,9 +19,4 @@ function git-clone() {
   fi
 }
 
-stow --verbose --dir "$HOME/.dotfiles" --target ~ bash ctags git ssh vim asdf zsh
-
-LINE="source $HOME/.dotfiles/bash/init.sh"
-if ! grep --line-regexp --fixed-strings "$LINE" "$HOME/.bashrc" > /dev/null; then
-  echo "$LINE" >> $HOME/.bashrc
-fi
+stow --verbose --dir "$HOME/.dotfiles" --target ~ ctags git ssh vim asdf zsh
