@@ -49,3 +49,5 @@ alias edit=subl
 alias zshrc='edit ~/.zshrc'
 alias screencast='sleep 3 && ffmpeg -y -f x11grab -r 25 -s 1920x1080 -i :0.0 -vcodec libx265 -crf 28 ~/Downloads/screencast.mp4'
 alias browse='nautilus . > /dev/null 2>&1 &'
+alias pbcopy='xclip -sel clip'
+alias copyip='myipv4 | pbcopy'
