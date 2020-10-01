@@ -1,13 +1,13 @@
 [apps/update-manager]
 first-run=false
-launch-count=6
-launch-time=int64 1598625982
+launch-count=10
+launch-time=int64 1601478188
 show-details=true
-window-height=400
-window-width=645
+window-height=1017
+window-width=1920
 
 [com/gexperts/Tilix]
-custom-hyperlinks=['"(https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*))",firefox $0,false', '([a-zA-Z0-9\\/\\_\\-\\.\\ ]+\\.[a-zA-Z0-9]+):?(\\d+),subl $0,false']
+custom-hyperlinks=['"(https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*))",firefox $0,false', '([a-zA-Z0-9\\/\\_\\-\\.\\ ]+\\.[a-zA-Z0-9]+):?(\\d+),subl $0,false', '([a-zA-Z0-9\\/\\_\\-\\.]+)?:?(\\d+),subl $0,false']
 enable-wide-handle=false
 new-instance-mode='focus-window'
 quake-specific-monitor=0
@@ -66,14 +66,14 @@ use-theme-colors=false
 visible-name='Default'
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1598431838
+release-check-time=uint32 1600852603
 
 [desktop/ibus/general]
 preload-engines=['xkb:us::eng']
 version='1.5.22'
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='notifications'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
@@ -119,6 +119,9 @@ show-battery-percentage=false
 application-children=['update-manager', 'apport-gtk', 'firefox', 'discord', 'enpass', 'org-gnome-nautilus', 'sublime-text', 'dropbox', 'flameshot', 'snap-store-ubuntu-software', 'slack', 'vlc', 'org-gnome-extensions-desktop', 'org-gnome-shell-extensions', 'gnome-printers-panel', 'com-gexperts-tilix']
 show-banners=true
 
+[org/gnome/desktop/notifications/application/albert]
+application-id='albert.desktop'
+
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
 
@@ -127,6 +130,8 @@ application-id='com.gexperts.Tilix.desktop'
 
 [org/gnome/desktop/notifications/application/discord]
 application-id='discord.desktop'
+enable-sound-alerts=false
+show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/dropbox]
 application-id='dropbox.desktop'
@@ -154,13 +159,16 @@ application-id='org.gnome.Shell.Extensions.desktop'
 
 [org/gnome/desktop/notifications/application/slack]
 application-id='slack.desktop'
+enable-sound-alerts=false
 
 [org/gnome/desktop/notifications/application/snap-store-ubuntu-software]
 application-id='snap-store_ubuntu-software.desktop'
 
 [org/gnome/desktop/notifications/application/sublime-text]
 application-id='sublime_text.desktop'
+enable=false
 enable-sound-alerts=false
+show-banners=false
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/update-manager]
@@ -203,7 +211,7 @@ event-sounds=true
 theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
-maximize=['<Primary><Shift>Up']
+maximize=['<Primary><Shift><Super>Up']
 move-to-monitor-left=['<Primary><Shift><Alt><Super>Left']
 move-to-monitor-right=['<Primary><Shift><Alt><Super>Right']
 panel-main-menu=['<Alt>MonBrightnessDown']
@@ -222,7 +230,7 @@ background-color='rgb(0,0,0)'
 use-background-color=true
 
 [org/gnome/evince/default]
-window-ratio=(0.75757575757575757, 0.98039215686274506)
+window-ratio=(0.98039215686274506, 0.75757575757575757)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -249,8 +257,8 @@ active-plugins=['modelines', 'time', 'filebrowser', 'docinfo', 'spell']
 
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
-tree-view=false
-virtual-root='file:///home/tt/.cache/.fr-BHBEAM/docs'
+tree-view=true
+virtual-root='file:///home/tt/Downloads'
 
 [org/gnome/gedit/preferences/ui]
 show-tabs-mode='auto'
@@ -260,7 +268,7 @@ bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
 size=(900, 700)
-state=87168
+state=43908
 
 [org/gnome/gnome-screenshot]
 border-effect='none'
@@ -291,6 +299,9 @@ overlay-key='Super_R'
 [org/gnome/mutter/keybindings]
 toggle-tiled-left=['<Primary><Shift>Left']
 toggle-tiled-right=['<Primary><Shift>Right']
+
+[org/gnome/mutter/wayland/keybindings]
+restore-shortcuts=['<Primary><Shift><Alt><Super>Escape']
 
 [org/gnome/nautilus/icon-view]
 captions=['size', 'date_modified', 'none']
@@ -379,11 +390,13 @@ horizontal=true
 
 [org/gnome/shell/keybindings]
 open-application-menu=['<Alt>AudioMute']
+toggle-application-view=['<Shift><Super>a']
 toggle-message-tray=['<Primary>End']
 toggle-overview=['<Primary>Page_Down']
 
 [org/gnome/software]
-check-timestamp=int64 1599119446
+check-timestamp=int64 1601542647
+online-updates-timestamp=int64 1601306664
 
 [org/gnome/system/location]
 enabled=false
@@ -433,5 +446,5 @@ sort-column='name'
 sort-directories-first=true
 sort-order='descending'
 type-format='category'
-window-position=(359, 66)
+window-position=(359, 79)
 window-size=(1203, 902)
