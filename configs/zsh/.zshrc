@@ -49,6 +49,7 @@ fi
 if [[ -f "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
   source "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 fi
+bindkey '^o' autosuggest-accept
 
 # zsh-autopair
 if [[ -f "$HOME/.zsh/zsh-autopair/autopair.zsh" ]]; then
