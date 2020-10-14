@@ -1,7 +1,7 @@
 [apps/update-manager]
 first-run=false
-launch-count=10
-launch-time=int64 1601478188
+launch-count=11
+launch-time=int64 1602088017
 show-details=true
 window-height=1017
 window-width=1920
@@ -11,6 +11,7 @@ custom-hyperlinks=['"(https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-
 enable-wide-handle=false
 new-instance-mode='focus-window'
 quake-specific-monitor=0
+recent-session-files=['/home/tt/.config/tilix/tilix-3-pane-session.json', '/home/tt/tilix-3-pane-session.json']
 sidebar-on-right=true
 terminal-title-show-when-single=false
 terminal-title-style='none'
@@ -33,6 +34,7 @@ session-switch-to-terminal-down='<Alt><Super>Down'
 session-switch-to-terminal-left='<Alt><Super>Left'
 session-switch-to-terminal-right='<Alt><Super>Right'
 session-switch-to-terminal-up='<Alt><Super>Up'
+terminal-advanced-paste='<Primary>v'
 terminal-close='<Super>w'
 terminal-copy='<Super>c'
 terminal-find='<Super>f'
@@ -43,37 +45,40 @@ terminal-maximize='<Shift><Super>Return'
 terminal-paste='<Super>v'
 terminal-reset='disabled'
 terminal-reset-and-clear='<Super>k'
-terminal-title-style='<Primary>v'
+terminal-title-style='disabled'
 win-switch-to-next-session='<Super>braceright'
 win-switch-to-previous-session='<Super>braceleft'
 
 [com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
-background-color='#272700002121'
+background-color='#F7F7F7'
 background-transparency-percent=0
 badge-color='#AC7EA8'
 badge-color-set=false
 bold-color-set=false
+cursor-blink-mode='system'
 cursor-colors-set=false
 cursor-shape='block'
-dim-transparency-percent=0
+custom-command=''
+dim-transparency-percent=36
 font='DejaVu Sans Mono 13'
-foreground-color='#A1B0B8'
+foreground-color='#4A4543'
 highlight-colors-set=false
 login-shell=true
-palette=['#252525', '#FF5252', '#C3D82C', '#FFC135', '#42A5F5', '#D81B60', '#00ACC1', '#F5F5F5', '#708284', '#FF5252', '#C3D82C', '#FFC135', '#42A5F5', '#D81B60', '#00ACC1', '#F5F5F5']
+palette=['#090300', '#DB2D20', '#01A252', '#FDED02', '#01A0E4', '#A16A94', '#B5E4F4', '#A5A2A2', '#5C5855', '#E8BBD0', '#3A3432', '#4A4543', '#807D7C', '#D6D5D4', '#CDAB53', '#F7F7F7']
+use-custom-command=false
 use-system-font=false
 use-theme-colors=false
-visible-name='Default'
+visible-name='Tadas'
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1600852603
+release-check-time=uint32 1602062311
 
 [desktop/ibus/general]
 preload-engines=['xkb:us::eng']
 version='1.5.22'
 
 [org/gnome/control-center]
-last-panel='notifications'
+last-panel='keyboard'
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
@@ -103,7 +108,7 @@ show-weekdate=false
 [org/gnome/desktop/input-sources]
 mru-sources=[('xkb', 'us'), ('xkb', 'lt')]
 sources=[('xkb', 'us'), ('xkb', 'lt')]
-xkb-options=@as []
+xkb-options=['ctrl:nocaps']
 
 [org/gnome/desktop/interface]
 clock-show-date=true
@@ -211,11 +216,14 @@ event-sounds=true
 theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
+close=['<Alt>MonBrightnessUp']
+cycle-group=['<Alt>KbdBrightnessUp']
+cycle-group-backward=['<Shift><Alt>KbdBrightnessUp']
 maximize=['<Primary><Shift><Super>Up']
 move-to-monitor-left=['<Primary><Shift><Alt><Super>Left']
 move-to-monitor-right=['<Primary><Shift><Alt><Super>Right']
 panel-main-menu=['<Alt>MonBrightnessDown']
-panel-run-dialog=['<Alt>MonBrightnessUp']
+panel-run-dialog=@as []
 switch-input-source=['<Primary>space']
 switch-input-source-backward=['<Primary><Shift>space']
 toggle-maximized=['<Alt>Return']
@@ -249,8 +257,8 @@ sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
-window-height=480
-window-width=600
+window-height=1007
+window-width=1920
 
 [org/gnome/gedit/plugins]
 active-plugins=['modelines', 'time', 'filebrowser', 'docinfo', 'spell']
@@ -258,7 +266,7 @@ active-plugins=['modelines', 'time', 'filebrowser', 'docinfo', 'spell']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/tt/Downloads'
+virtual-root='file:///home/tt/Desktop'
 
 [org/gnome/gedit/preferences/ui]
 show-tabs-mode='auto'
@@ -319,6 +327,10 @@ search-view='list-view'
 [org/gnome/nautilus/window-state]
 initial-size=(890, 550)
 maximized=true
+
+[org/gnome/nm-applet/eap/c9bac9a1-43c3-37d1-a4b7-39855cb0cfe8]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/fcc9bb74-befe-484b-abe1-7819747582f4]
 ignore-ca-cert=false
@@ -395,7 +407,7 @@ toggle-message-tray=['<Primary>End']
 toggle-overview=['<Primary>Page_Down']
 
 [org/gnome/software]
-check-timestamp=int64 1601542647
+check-timestamp=int64 1602231515
 online-updates-timestamp=int64 1601306664
 
 [org/gnome/system/location]
