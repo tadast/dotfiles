@@ -42,7 +42,7 @@ alias topcmd="history | awk '{print $2}' | awk 'BEGIN {FS=\"|\"} {print $1}' | s
 alias myipv4='dig @resolver1.opendns.com A myip.opendns.com +short -4'
 alias howtocurl='curl https://cheat.sh/curl'
 alias showports='netstat -tulpn'
-alias ls='exa -la'
+alias ll='exa -la'
 alias re='exec zsh' # reload sh session
 alias open=xdg-open
 alias edit="subl && wmctrl -a \"\$(wmctrl -l | grep subl | cut -f 1,2,3,4 -d ' ' --complement)\" 2>&1 >/dev/null" # open in sublime and focus
