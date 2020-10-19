@@ -45,9 +45,23 @@ alias showports='netstat -tulpn'
 alias ll='exa -la'
 alias re='exec zsh' # reload sh session
 alias open=xdg-open
-alias edit="subl && wmctrl -a \"\$(wmctrl -l | grep subl | cut -f 1,2,3,4 -d ' ' --complement)\" 2>&1 >/dev/null" # open in sublime and focus
 alias zshrc='edit ~/.zshrc'
 alias screencast='sleep 3 && ffmpeg -y -f x11grab -r 25 -s 1920x1080 -i :0.0 -vcodec libx265 -crf 28 ~/Downloads/screencast.mp4'
 alias browse='nautilus . > /dev/null 2>&1 &'
 alias pbcopy='xclip -sel clip'
 alias copyip='myipv4 | pbcopy'
+
+# open in sublime and focus
+function edit() {
+  REALPATH=$(realpath $@)
+  BASENAME=$(basename $REALPATH)
+  subl $@
+
+  while ! [[ "$(wmctrl -l | grep Subl)" =~ "$BASENAME" ]]
+  do
+    sleep 0.1
+  done
+
+  FOCUSWINDOW=$(wmctrl -l | grep Subl | grep $BASENAME | cut -f 1,2,3,4 -d ' ' --complement)
+  wmctrl -a "$FOCUSWINDOW" 2>&1 >/dev/null
+}
