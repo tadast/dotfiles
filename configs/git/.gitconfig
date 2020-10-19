@@ -12,6 +12,7 @@
   wip = commit -m 'wip [ci skip]'
 [core]
   excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
 
 [format]
   pretty=format:%C(yellow)%h%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
