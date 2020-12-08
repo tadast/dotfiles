@@ -1,10 +1,17 @@
 [apps/update-manager]
 first-run=false
-launch-count=11
-launch-time=int64 1602088017
+launch-count=12
+launch-time=int64 1607292292
 show-details=true
 window-height=1017
 window-width=1920
+
+[ca/desrt/dconf-editor]
+saved-pathbar-path='/org/gnome/shell/world-clocks/'
+saved-view='/org/gnome/shell/'
+window-height=500
+window-is-maximized=true
+window-width=540
 
 [com/gexperts/Tilix]
 custom-hyperlinks=['"(https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*))",firefox $0,false', '([a-zA-Z0-9\\/\\_\\-\\.\\ ]+\\.[a-zA-Z0-9]+):?(\\d+),subl $0,false', '([a-zA-Z0-9\\/\\_\\-\\.]+)?:?(\\d+),subl $0,false']
@@ -50,10 +57,12 @@ win-switch-to-next-session='<Super>braceright'
 win-switch-to-previous-session='<Super>braceleft'
 
 [com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
-background-color='#F7F7F7'
+background-color='#0E1019'
 background-transparency-percent=0
 badge-color='#AC7EA8'
 badge-color-set=false
+badge-font='Monospace 20'
+badge-use-system-font=false
 bold-color-set=false
 cursor-blink-mode='system'
 cursor-colors-set=false
@@ -61,17 +70,17 @@ cursor-shape='block'
 custom-command=''
 dim-transparency-percent=36
 font='DejaVu Sans Mono 13'
-foreground-color='#4A4543'
+foreground-color='#FFFAF4'
 highlight-colors-set=false
 login-shell=true
-palette=['#090300', '#DB2D20', '#01A252', '#FDED02', '#01A0E4', '#A16A94', '#B5E4F4', '#A5A2A2', '#5C5855', '#E8BBD0', '#3A3432', '#4A4543', '#807D7C', '#D6D5D4', '#CDAB53', '#F7F7F7']
+palette=['#232323', '#FF000F', '#8CE10B', '#FFB900', '#008DF8', '#6D43A6', '#00D8EB', '#FFFFFF', '#444444', '#FF2740', '#ABE15B', '#FFD242', '#0092FF', '#9A5FEB', '#67FFF0', '#FFFFFF']
 use-custom-command=false
 use-system-font=false
 use-theme-colors=false
 visible-name='Tadas'
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1602062311
+release-check-time=uint32 1607292587
 
 [desktop/ibus/general]
 preload-engines=['xkb:us::eng']
@@ -136,6 +145,7 @@ application-id='com.gexperts.Tilix.desktop'
 [org/gnome/desktop/notifications/application/discord]
 application-id='discord.desktop'
 enable-sound-alerts=false
+show-banners=false
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/dropbox]
@@ -149,6 +159,9 @@ application-id='firefox.desktop'
 
 [org/gnome/desktop/notifications/application/flameshot]
 application-id='flameshot.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-printers-panel]
 application-id='gnome-printers-panel.desktop'
@@ -181,6 +194,9 @@ application-id='update-manager.desktop'
 
 [org/gnome/desktop/notifications/application/vlc]
 application-id='vlc.desktop'
+
+[org/gnome/desktop/notifications/application/zoom]
+application-id='Zoom.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=true
@@ -285,6 +301,16 @@ include-border=true
 include-pointer=false
 last-save-directory='file:///home/tt/Documents'
 
+[org/gnome/gnome-system-monitor]
+maximized=true
+show-dependencies=false
+show-whose-processes='user'
+window-state=(3440, 1364, 0, 29)
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+
 [org/gnome/meld]
 draw-spaces=['space', 'tab', 'newline', 'nbsp', 'leading', 'text', 'trailing']
 highlight-current-line=true
@@ -338,6 +364,7 @@ ignore-phase2-ca-cert=false
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
+night-light-temperature=uint32 3759
 
 [org/gnome/settings-daemon/plugins/media-keys]
 area-screenshot=['<Shift><Super>dollar']
@@ -393,10 +420,12 @@ toggle-menu=['<Alt><Super>c']
 dash-max-icon-size=30
 dock-fixed=false
 dock-position='RIGHT'
+hot-keys=true
 multi-monitor=false
 preferred-monitor=0
 
 [org/gnome/shell/extensions/maxi]
+blacklisted-apps=['org.gnome.Calculator.desktop', 'enpass.desktop']
 debug=true
 horizontal=true
 
@@ -407,8 +436,8 @@ toggle-message-tray=['<Primary>End']
 toggle-overview=['<Primary>Page_Down']
 
 [org/gnome/software]
-check-timestamp=int64 1602231515
-online-updates-timestamp=int64 1601306664
+check-timestamp=int64 1607349981
+online-updates-timestamp=int64 1607293438
 
 [org/gnome/system/location]
 enabled=false
