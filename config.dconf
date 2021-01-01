@@ -406,7 +406,7 @@ hinting='slight'
 command-history=['r']
 disable-user-extensions=false
 enabled-extensions=['ubuntu-appindicators@ubuntu.com', 'ubuntu-dock@ubuntu.com', 'desktop-icons@csoriano', 'clipboard-indicator@tudmotu.com', 'gnome-shell-extension-maximized-by-default@axe1.github.com', 'maxi@darkretailer.github.com', 'maxi@da']
-favorite-apps=['com.gexperts.Tilix.desktop', 'discord.desktop', 'slack.desktop', 'firefox.desktop', 'sublime_text.desktop', 'enpass.desktop', 'org.gnome.Nautilus.desktop', 'snap-store_ubuntu-software.desktop']
+favorite-apps=['com.gexperts.Tilix.desktop', 'discord.desktop', 'sublime_text.desktop', 'firefox.desktop', 'slack.desktop', 'enpass.desktop', 'org.gnome.Nautilus.desktop', 'snap-store_ubuntu-software.desktop']
 
 [org/gnome/shell/extensions/clipboard-indicator]
 display-mode=0
